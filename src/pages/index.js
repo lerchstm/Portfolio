@@ -1,11 +1,15 @@
 import * as React from "react"
+import { 
+  container,
+  aboutMe,
+  imageProfilePicture,
+  imageCropper
+} from '../components/layout.module.css'
+
+import profilePicture from "../images/me.jpg"
 
 // styles
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
+
 const headingStyles = {
   marginTop: 0,
   marginBottom: 64,
@@ -128,10 +132,27 @@ const links = [
 // markup
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Home Page</title>
+    <main className={container}>
+      <title>Mika's Portfolio </title>
+
+      <div className={aboutMe} >
+        <div className={ imageCropper}>
+        <img
+        className={imageProfilePicture}
+        alt="Thats Me"
+        src={profilePicture}></img>
+        </div>
+     
+        <p>
+        <ul>
+          <li>Name: Mika Lerchster</li>
+          <li>Birthdate: 29.08.2000</li>
+          <li>Located: Austria</li>
+        </ul>
+        </p>
+      </div>
       <h1 style={headingStyles}>
-        Congratulations
+        Who am I? 
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">

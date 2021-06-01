@@ -1,0 +1,26 @@
+
+.container {
+    color: "#232129";
+    margin: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.aboutMe {
+    background-color: #f5f5f2;
+    padding: 100px;
+}
+
+.imageProfilePicture {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    clip-path: circle();
+}
+
+.imageCropper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
