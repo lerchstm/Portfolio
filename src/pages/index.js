@@ -3,10 +3,17 @@ import {
   container,
   aboutMe,
   imageProfilePicture,
-  imageCropper
+  imageCropper,
+  list,
+  listSpan
 } from '../components/layout.module.css'
 
 import profilePicture from "../images/me.jpg"
+import {
+  MdPerson,
+  MdPlace,
+  MdInfo
+} from "react-icons/md"
 
 // styles
 
@@ -144,15 +151,17 @@ const IndexPage = () => {
         </div>
      
         <p>
-        <ul>
-          <li>Name: Mika Lerchster</li>
-          <li>Birthdate: 29.08.2000</li>
-          <li>Located: Austria</li>
+          <h1>Thats me!</h1>
+          <h3>But who am I?</h3>
+        <ul className={list}>
+          <li><span className={listSpan}><MdPerson /></span>my Name is Mika Lerchster</li>
+          <li><span className={listSpan}><MdInfo /></span>im 20 Years old</li>
+          <li><span className={listSpan}><MdPlace /></span>based in Carinthia (Austria)</li>
         </ul>
         </p>
       </div>
       <h1 style={headingStyles}>
-        Who am I? 
+        Who am I?
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! </span>
         <span role="img" aria-label="Party popper emojis">

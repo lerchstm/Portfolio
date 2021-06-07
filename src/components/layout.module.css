@@ -1,13 +1,13 @@
 
 .container {
     color: "#232129";
-    margin: 50px;
     font-family: 'Roboto', sans-serif;
 }
 
 .aboutMe {
     background-color: #f5f5f2;
-    padding: 100px;
+    padding: 80px;
+    display: flex;
 }
 
 .imageProfilePicture {
@@ -19,8 +19,20 @@
 }
 
 .imageCropper {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+/*.listItem{
+    
+} */
+
+.listSpan{
+    padding-right: 0.6em;
 }
