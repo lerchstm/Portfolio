@@ -29,10 +29,29 @@
     list-style: none;
 }
 
-/*.listItem{
-    
-} */
-
 .listSpan{
     padding-right: 0.6em;
+}
+
+
+//Header
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    .innerHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        a{
+            text-decoration: none;
+        }        
+    }
+    .navigation{
+        nav {
+
+        }
+    }
 }
