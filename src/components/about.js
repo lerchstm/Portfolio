@@ -11,12 +11,13 @@ import profilePicture from "../images/me.jpg"
 
 const About = () => (
     <div className={"about"} >
-        <div className={ "imageCropper"}>
+      <div className={"innerContainer"}>
+      
         <img
-        className={"imageProfilePicture"}
+        className={"imageCropper"}
         alt="Thats Me"
         src={profilePicture}></img>
-        </div>
+
      
         <p>
           <h1>Facts</h1>
@@ -26,6 +27,7 @@ const About = () => (
           <li><span className={"listSpan"}> <MdPlace /></span>based in Carinthia (Austria)</li>
         </ul>
         </p>
+        </div>
       </div>
 )
 

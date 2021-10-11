@@ -52,8 +52,10 @@ header{
 .intro{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(0, 0, 139, 0.685);
     margin-top: 100px;
+    height: 400px;
+    justify-content: center;
     .firstRow{
         position: relative;
         display: flex;
@@ -125,11 +127,21 @@ header{
 
 //About
 .about {
-    background-color: #f3f4f5;
     padding: 80px;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 100px;
+
+    .innerContainer{
+        justify-content: center;
+        //background-color: #f1f2f3;
+        box-shadow:7px 7px 7px #f1f2f3, -7px 0 5px #f1f2f3;
+        width: 1000px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+    }
     .imageProfilePicture {
         display: block;
         margin: 0 auto;
@@ -138,11 +150,10 @@ header{
         clip-path: circle();
     }
     .imageCropper {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
+        width: 200px;
+        height: 280px;
+        padding: 50px;
+    } 
     .list {
     list-style: none;
     }
