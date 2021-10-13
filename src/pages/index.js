@@ -1,12 +1,4 @@
 import * as React from "react"
- /* import { 
-  container,
-  aboutMe,
-  imageProfilePicture,
-  imageCropper,
-  list,
-  listSpan
-} from '../styles/styles.scss' */
 
 import '../styles/styles.scss'
 
