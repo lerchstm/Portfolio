@@ -1,3 +1,5 @@
+$lightgrey: #f1f2f3;
+$white: #ffffff;
 
 html,
 body {
@@ -138,7 +140,7 @@ header{
     .innerContainer{
         //justify-content: center;
         //background-color: #f1f2f3;
-        box-shadow:7px 7px 7px #f1f2f3, -7px 0 5px #f1f2f3;
+        box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
         width: 1000px;
         border-radius: 2px;
         display: flex;
@@ -181,4 +183,49 @@ header{
     text-align: justify;
     line-height: 1.5;
 }
+
+//Career
+.career{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    min-width: 300px;
+
+    .innerContainer{
+        box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
+        width: 1000px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        .chapter{
+            margin: 50px 0 50px 0;
+            height: 300px;
+            width: 500px;
+            box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
+            //background-color: $lightgrey;
+            align-self: center;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+
+            .front{
+                backface-visibility: hidden;
+                transform: rotateY(0deg);
+            }
+            .back{
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+            }
+          
+        }
+        
+    }
+
+}
+.flipChapter{
+    transform: rotateY(180deg);
+}
+
+
 

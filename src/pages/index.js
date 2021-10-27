@@ -5,6 +5,7 @@ import '../styles/styles.scss'
 import Header from '../components/header'
 import About from '../components/about'
 import Intro from '../components/intro'
+import Career from "../components/carrer"
 
 
 
@@ -19,6 +20,7 @@ const IndexPage = () => {
         <div className="container">
         <Intro/>
         <About/>
+        <Career/>
         </div>
       </div>  
     </main>
