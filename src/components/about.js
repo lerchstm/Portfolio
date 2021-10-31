@@ -11,7 +11,7 @@ import profilePicture from "../images/me2.jpg"
 
 
 const About = () => (
-    <div className={"about"} >
+    <div className={"about"} id="about" >
       <div className={"innerContainer"}>
         <img
         className={"profilePicture"}

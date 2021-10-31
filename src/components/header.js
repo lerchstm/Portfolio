@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import {AnchorLink} from "gatsby-plugin-anchor-links"
 
 const Header = () => (
     <header>
@@ -9,9 +10,9 @@ const Header = () => (
             </div>
             <div className="navigation">
                 <nav>
-                    <Link to="/about">About</Link>
-                    <Link to="/career">Career</Link>
-                    <Link to="/contact">Contact</Link>
+                    <AnchorLink to="#about" title="About"/>
+                    <AnchorLink to="#career" title="Career"/>
+                    <AnchorLink to="#contact" title="Contact"/>
                 </nav>
             </div>
         </div>

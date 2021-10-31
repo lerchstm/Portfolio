@@ -182,49 +182,87 @@ header{
 .text{
     text-align: justify;
     line-height: 1.5;
+   
+}
+
+.title2{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.subTitle{
+    font-size: 1.2rem;
 }
 
 //Career
-.career{
+.careerSection{
     padding: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    min-width: 300px;
+    //margin-top: 50px;
 
-    .innerContainer{
+
+    .carrerBox{
         box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
         width: 1000px;
         border-radius: 2px;
         display: flex;
         flex-direction: column;
+        min-width: 600px;
+
         .chapter{
+            display: flex;
             margin: 50px 0 50px 0;
             height: 300px;
             width: 500px;
             box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
             //background-color: $lightgrey;
             align-self: center;
+            //perspective: 1000px;
+            transition: transform 0.8s;
             transform-style: preserve-3d;
-            transition: all 0.8s ease;
-
-            .front{
-                backface-visibility: hidden;
-                transform: rotateY(0deg);
+            .innerChapter{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                .front, .back{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                }
+                .front{
+                    display: flex;
+                    transform: rotate(0deg);  
+                    align-items: center;
+                    justify-content: center;
+                }
+                .back{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    transform: rotateY(180deg);
+                    align-items: center;
+                    //justify-content: center;
+                    .innerBack{
+                        padding: 25px;
+                        text-align: center;
+                    }
+                }
+                .backgroundImage{
+                    position: absolute;
+                    opacity: 50%;
+                    z-index: -1;
+                 }
             }
-            .back{
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
-            }
-          
         }
-        
+        .chapter:hover{
+            transform: rotateY(180deg);
+        }   
     }
-
-}
-.flipChapter{
-    transform: rotateY(180deg);
 }
 
 
