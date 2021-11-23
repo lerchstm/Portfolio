@@ -1,6 +1,22 @@
 $lightgrey: #f1f2f3;
 $white: #ffffff;
 
+$fs-small: 2.2rem;
+$fs-med: 4.4rem;
+$fs-large: 6.6rem;
+$fs-xl: 8.8rem;
+
+$hs-small: 40px;
+$hs-med: 60px;
+$hs-large: 80px;
+$hs-xl: 100px;
+
+$vh-small: 20vh;
+$vh-med: 40vh;
+$vh-large: 60vh;
+$vh-xl: 80vh;
+
+
 html,
 body {
     font-family: 'Roboto', sans-serif;
@@ -52,32 +68,70 @@ header{
 
 //Intro
 .intro{
+    color: white;
+    text-shadow: 0 0 5px #000;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 139, 0.685);
     margin-top: 100px;
-    height: 400px;
-    min-width: 500px;
+    height: $vh-small;
+    min-height: 400px;
+    min-width: 350px;
     justify-content: center;
+    @media(min-width: 1000px){
+        height: $vh-med;
+    }
+    @media(min-width: 1600px){
+        height: $vh-large;
+    }
+    @media(min-width: 2000px){
+        height: $vh-xl;
+    }
     .firstRow{
         position: relative;
         display: flex;
         flex-direction: row;
         width: 33.3%;
+        justify-content: center;
         .firstText{
-            font-size: 4.2rem;
+            font-size: $fs-small;
+
             font-weight: 700;
             text-transform: uppercase;
-            //text-align: center;
+            @media(min-width: 1000px){
+                font-size: $fs-med;
+                font-weight: 700;
+            }
+            @media(min-width: 1600px){
+                font-size: $fs-large;
+                font-weight: 700;
+            }
+            @media(min-width: 2000px){
+                font-size: $fs-xl;
+                font-weight: 700;
+            }
 
         }
         .firstRectangle{
             height: 70px;
-            width: 50px;
+            width: $hs-small;
             border-color: yellow;
             border-style: solid;
             border-top: none;
             margin-left: 20px;
+
+            @media(min-width: 1000px){
+                width: $hs-med;
+                height: 100px;
+            }
+            @media(min-width: 1600px){
+                width: $hs-large;
+                height: 150px;
+            }
+            @media(min-width: 2000px){
+                width: $hs-xl;
+                height: 200px;
+            }
             
         }
     }
@@ -85,44 +139,89 @@ header{
         display: flex;
         flex-direction: row;
         position: relative;
-        width: 66.6%;
-        left: 33.3%;
+        width: 60%;
+        left: 40%;
         .secondText{
-            font-size: 4.2rem;
+            font-size: $fs-small;
             font-weight: 700;
             text-align: right;
             text-transform: uppercase;
+            @media(min-width: 1000px){
+                font-size: $fs-med;
+                font-weight: 700;
+            }
+            @media(min-width: 1600px){
+                font-size: $fs-large;
+                font-weight: 700;
+            }
+            @media(min-width: 2000px){
+                font-size: $fs-xl;
+                font-weight: 700;
+            }
 
         }
         .secondRectangle{
-            height: 50px;
+            height: $hs-small;
             width: 100%;
             border-color: red;
             border-style: solid;
             border-right: none;
             margin-top: 7px;
             margin-left: 30px;
+
+            @media(min-width: 1000px){
+                height: $hs-med;
+            }
+            @media(min-width: 1600px){
+                height: $hs-large;
+            }
+            @media(min-width: 2000px){
+                height: $hs-xl;
+            }
         }
     }
     .thirdRow{
+        display: flex;
         position: relative;
         left: 66.6%;
         width: 33.3%;
+        justify-content: center;
         .thirdText{
-            font-size: 4.2rem;
+            font-size: $fs-small;
             font-weight: 700;
             text-transform: uppercase;
+            @media(min-width: 1000px){
+                font-size: $fs-med;
+                font-weight: 700;
+            }
+            @media(min-width: 1600px){
+                font-size: $fs-large;
+                font-weight: 700;
+            }
+            @media(min-width: 2000px){
+                font-size: $fs-xl;
+                font-weight: 700;
+            }
 
         }
     }
     .fourthRow{
         position: relative;
         .thirdRectangle{
-            height: 50px;
+            height: 40px;
             width: 33.33%;
             border-color: blue;
             border-style: solid;
             border-left: none;
+            @media(min-width: 1000px){
+                height: $hs-med;
+            }
+            @media(min-width: 1600px){
+                height: $hs-large;
+            }
+            @media(min-width: 2000px){
+                height: $hs-xl;
+            }
         }
     }
 }
@@ -135,7 +234,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    min-width: 300px;
+    //min-width: 300px;
 
     .innerContainer{
         //justify-content: center;
@@ -209,13 +308,16 @@ header{
         border-radius: 2px;
         display: flex;
         flex-direction: column;
-        min-width: 600px;
+        min-width: 400px;
 
         .chapter{
             display: flex;
-            margin: 50px 0 50px 0;
-            height: 300px;
-            width: 500px;
+            //margin: 50px 0 50px 0;
+            margin: 50px;
+            //max-height: 300px;
+            height: 100%;
+            max-width: 500px;
+            //width: 100%;
             box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
             //background-color: $lightgrey;
             align-self: center;
@@ -228,6 +330,7 @@ header{
                 height: 100%;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
+
                 .front, .back{
                     position: absolute;
                     width: 100%;
@@ -256,6 +359,9 @@ header{
                     position: absolute;
                     opacity: 50%;
                     z-index: -1;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                  }
             }
         }
