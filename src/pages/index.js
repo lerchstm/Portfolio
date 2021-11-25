@@ -16,7 +16,6 @@ const IndexPage = () => {
   return (
     <main>
       <title>Mika's Portfolio </title>
-      <div>
       <Header/>
         <div className="container">
         <Intro/>
@@ -24,7 +23,6 @@ const IndexPage = () => {
         <Career/>
         </div>
         <Footer/>
-      </div>  
     </main>
   )
 }

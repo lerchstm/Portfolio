@@ -18,7 +18,6 @@ $vh-med: 40vh;
 $vh-large: 60vh;
 $vh-xl: 80vh;
 
- *{ margin:0; padding:0; }
 
 html,
 body {
@@ -31,26 +30,31 @@ body {
     flex-direction: column;
     margin: 50px;
     @media (max-width: 600px){
-        margin: 20px;
+        margin: 10px;
     }
+    position: relative;
 }
 
 
     
 //Header
-header{
+.header{
+    display: flex;
+    flex-direction: row;
     height: 80px;
-    width: 100%;
+    left:10px;
+    right:10px;
     position: fixed;
     top: 0px;
     z-index: 10;
-    .innerHeader{
+    align-items: center;
+    background-color: white;
+    /*.innerHeader{
         display: flex;
         align-items: center;
-        justify-content: space-between;
         height: 80px;
         background-color: white;
-    }
+    }*/
     .logo{
         a{
             text-decoration: none;
@@ -61,13 +65,17 @@ header{
         }        
     }
     .navigation{
+        margin-left: auto;
+        margin-right: 0px;
         nav {
             a{
                 text-decoration: none;
                 color: black;
-                margin: 20px;
-                text-transform: uppercase;
-              
+                margin-right: 20px;
+                text-transform: uppercase; 
+            }
+            a:last-child{
+                margin-right: 0px;
             }
         }
     }
@@ -84,7 +92,7 @@ header{
     height: $vh-small;
     min-height: 400px;
     width: 100%;
-    //min-width: 321px;
+    min-width: 350px;
     justify-content: center;
     @media (min-width: 450px){
         height: $vh-small;
@@ -257,14 +265,17 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 100px;
-    //min-width: 300px;
+    //min-width: 350px;
+    @media (max-width: 600px){
+        padding: 0px;
+    }
 
     .innerContainer{
         //justify-content: center;
         //background-color: #f1f2f3;
         box-shadow:7px 7px 7px $lightgrey, -7px 0 5px $lightgrey;
         width: 1000px;
-        min-width: 350px;
+        min-width: 300px;
         border-radius: 2px;
         display: flex;
         flex-direction: row;
@@ -278,11 +289,10 @@ header{
 
             .profilePicture {
                 padding: 50px;
-                @media (max-width: 450px){
-                width: 100%;
-                height: 100%;
-                
-                object-fit:scale-down;
+                @media (max-width: 400px){
+                    padding: 10px;
+                    height: 300px;
+                    width: 225px;
                 }
             }    
         }
@@ -327,6 +337,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 600px){
+        padding: 0px;
+    }
     //margin-top: 50px;
 
 
@@ -336,7 +349,7 @@ header{
         border-radius: 2px;
         display: flex;
         flex-direction: column;
-        min-width: 350px;
+        min-width: 300px;
 
         .chapter{
             display: flex;

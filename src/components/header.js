@@ -4,7 +4,7 @@ import {AnchorLink} from "gatsby-plugin-anchor-links"
 
 const Header = () => (
     <header>
-        <div className="innerHeader">
+        <div className="header">
             <div className="logo">
                 <Link to="/">Portfolio</Link>
             </div>
