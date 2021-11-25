@@ -12,7 +12,6 @@ const Header = () => (
                 <nav>
                     <AnchorLink to="#about" title="About"/>
                     <AnchorLink to="#career" title="Career"/>
-                    <AnchorLink to="#contact" title="Contact"/>
                 </nav>
             </div>
         </div>
