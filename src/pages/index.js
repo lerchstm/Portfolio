@@ -17,7 +17,7 @@ const IndexPage = () => {
     <main>
       <title>Mika's Portfolio </title>
       <div>
-        <Header/>
+      <Header/>
         <div className="container">
         <Intro/>
         <About/>
