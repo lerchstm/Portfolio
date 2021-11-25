@@ -17,6 +17,8 @@ const About = () => (
         <img
         className={"profilePicture"}
         alt="Thats Me"
+        width="300px"
+        height="400px"
         src={profilePicture}></img>
         </div>
 
