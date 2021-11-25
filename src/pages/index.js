@@ -6,6 +6,7 @@ import Header from '../components/header'
 import About from '../components/about'
 import Intro from '../components/intro'
 import Career from "../components/carrer"
+import Footer from "../components/footer"
 
 
 
@@ -22,6 +23,7 @@ const IndexPage = () => {
         <About/>
         <Career/>
         </div>
+        <Footer/>
       </div>  
     </main>
   )

@@ -9,7 +9,7 @@ const Career = () => (
             <div className="chapter">
                 <div className="innerChapter">
                     <div className="front">
-                    <img src={schoolPicture} width="500px" height="300px" className="backgroundImage"></img>
+                    <img src={schoolPicture} alt="schoolPicture" width="500px" height="300px" className="backgroundImage"></img>
                         <p className="title">Chapter 0</p>
                     </div>
                     <div className="back">
@@ -30,7 +30,7 @@ const Career = () => (
             <div className="chapter">
                 <div className="innerChapter">
                     <div className="front">
-                    <img src={redCross} width="500px" height="300px" className="backgroundImage"></img>
+                    <img src={redCross} alt="redCross" width="500px" height="300px" className="backgroundImage"></img>
                         <p className="title">Chapter 1</p>
                     </div>
                     <div className="back">

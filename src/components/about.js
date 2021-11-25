@@ -13,10 +13,12 @@ import profilePicture from "../images/me2.jpg"
 const About = () => (
     <div className={"about"} id="about" >
       <div className={"innerContainer"}>
+        <div className={"profilePictureContainer"}>
         <img
         className={"profilePicture"}
         alt="Thats Me"
         src={profilePicture}></img>
+        </div>
 
         <div className="aboutSection">
           <div className="title">About</div>
